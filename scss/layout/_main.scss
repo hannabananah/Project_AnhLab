@@ -1,0 +1,356 @@
+@include clearfix();
+
+#main {
+  overflow: hidden;
+  position: relative;
+  min-width: 1200px;
+  background: #eff3f6;
+  text-align: center;
+
+  #section {
+    width: 100%;
+    margin: 155px auto 35px;
+    padding: 0 40px 100px;
+    background: #fff url(../images/2022_03_bg_evtA.jpg) repeat-x 0 bottom;
+    border-top: 6px solid #26bc5f;
+
+    &-about {
+      background: $color-white;
+      padding: 9rem 3rem;
+      width: 100%;
+      min-height: 72rem;
+      border-bottom: 4px dashed #e3e5e8;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      @include clearfix();
+
+      @include mq("small-screen-1") {
+        width: 100%;
+      } //900px~1200px
+
+      @include mq("small-screen-2") {
+        width: 100%;
+        height: 54rem;
+        padding: 7rem 6rem 6.5rem 6rem;
+      } //701px~899px
+
+      @include mq("small-screen-3") {
+        width: 100%;
+        height: 60rem;
+        padding: 7rem 6rem 6.5rem 6rem;
+      } //~700px
+
+      &-words {
+        width: 100%;
+        padding: 4rem 0 6rem;
+
+        @include mq("small-screen-2") {
+          width: 100%;
+        }
+        @include mq("small-screen-3") {
+          width: 100%;
+        }
+        p {
+          padding: 1.5rem 0;
+          font-size: 1.4rem;
+          font-weight: 700;
+          text-align: center;
+        }
+      }
+      &-photo {
+        width: 60%;
+        margin: 0 auto;
+
+        @include mq("small-screen-2") {
+          width: 100%;
+        }
+        @include mq("small-screen-3") {
+          width: 100%;
+        }
+
+        .photo {
+          transition: all 0.5s;
+          float: left;
+          padding: 0 2rem;
+
+          &:hover {
+            transform: scale(1.1);
+            padding: 1rem;
+            border: 2px solid $color-secondary;
+            border-radius: 10%;
+            z-index: 10;
+          }
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .section2 {
+        padding-top: 11rem;
+        padding-left: 3rem;
+        min-height: 44rem;
+
+        &-photo {
+          padding: 0 1rem;
+          width: 250px;
+
+          &1 {
+            animation-name: pop1;
+            transform-origin: center bottom;
+            animation-duration: 4s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+          }
+          @keyframes pop1 {
+            0%,
+            3%,
+            9%,
+            16% {
+              transform: translate3d(0, 0, 0);
+            }
+            6% {
+              transform: translate3d(0, -20px, 0);
+            }
+            11% {
+              transform: translate3d(0, 10px, 0);
+            }
+            13% {
+              transform: translate3d(0, 0, 0);
+            }
+            15% {
+              transform: translate3d(0, -5px, 0);
+            }
+          }
+
+          &2 {
+            animation-name: pop2;
+            transform-origin: center bottom;
+            animation-duration: 4s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+          }
+          @keyframes pop2 {
+            5%,
+            8%,
+            14%,
+            21% {
+              transform: translate3d(0, 0, 0);
+            }
+            11% {
+              transform: translate3d(0, -20px, 0);
+            }
+            16% {
+              transform: translate3d(0, 10px, 0);
+            }
+            18% {
+              transform: translate3d(0, 0, 0);
+            }
+            20% {
+              transform: translate3d(0, -5px, 0);
+            }
+          }
+
+          &3 {
+            animation-name: pop3;
+            transform-origin: center bottom;
+            animation-duration: 4s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+          }
+          @keyframes pop3 {
+            10%,
+            13%,
+            19%,
+            26% {
+              transform: translate3d(0, 0, 0);
+            }
+            16% {
+              transform: translate3d(0, -20px, 0);
+            }
+            21% {
+              transform: translate3d(0, 10px, 0);
+            }
+            23% {
+              transform: translate3d(0, 0, 0);
+            }
+            25% {
+              transform: translate3d(0, -5px, 0);
+            }
+          }
+
+          &4 {
+            animation-name: pop4;
+            transform-origin: center bottom;
+            animation-duration: 4s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+          }
+          @keyframes pop4 {
+            15%,
+            18%,
+            24%,
+            31% {
+              transform: translate3d(0, 0, 0);
+            }
+            21% {
+              transform: translate3d(0, -20px, 0);
+            }
+            26% {
+              transform: translate3d(0, 10px, 0);
+            }
+            28% {
+              transform: translate3d(0, 0, 0);
+            }
+            30% {
+              transform: translate3d(0, -5px, 0);
+            }
+          }
+
+          &:nth-child(1),
+          &:nth-child(3) {
+            position: relative;
+            bottom: 3rem;
+          }
+
+          &:hover {
+            transform: translate(0, 10px);
+            z-index: 10;
+            border: none;
+          }
+        }
+      }
+      .section3 {
+        padding-top: 5rem;
+
+        &-photo {
+          padding: 0 1rem;
+          width: 350px;
+        }
+        .photo:hover {
+          animation: flip 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+          border: none;
+          padding: 0 1rem;
+          transform: none;
+        }
+
+        @keyframes flip {
+          0% {
+            transform: translateX(0) translateZ(0) rotateY(0);
+            transform-origin: 0 50%;
+          }
+          100% {
+            transform: translateX(-100%) translateZ(160px) rotateY(180deg);
+            transform-origin: 100% 0;
+          }
+        }
+      }
+    }
+  }
+}
+// !-- #section-about --
+#section-e {
+  padding: 100px 0 80px;
+  background: #fff;
+
+  &tc {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+
+    @include mq("small-screen-1") {
+      width: 100%;
+    }
+    @include mq("small-screen-2") {
+      width: 100%;
+    }
+    @include mq("small-screen-3") {
+      width: 100%;
+    }
+    [id^="etc-"] {
+      height: 20rem;
+    }
+    &-1 {
+      padding-top: 5rem;
+    }
+
+    .etc {
+      @include mq("small-screen-1") {
+        width: 33.33333%;
+        float: left;
+      }
+      @include mq("small-screen-2") {
+        width: 33.33333%;
+        float: left;
+        height: 22rem;
+        overflow: hidden;
+      }
+
+      &-icon {
+        padding-top: 3.5rem;
+        width: 25%;
+        text-align: center;
+        float: left;
+
+        span {
+          width: 100px;
+          font-size: 6rem;
+          height: 100px;
+          color: #fff;
+          padding: 15px;
+          border: 4px solid #fff;
+          border-radius: 25%;
+          box-shadow: 0px 0px 15px #a2a2a2;
+        }
+        span.icons {
+          &-1 {
+            background-image: linear-gradient($color-box-blue, $color-blue-3);
+          }
+          &-2 {
+            background-image: linear-gradient($color-box-blue, $color-blue-3);
+          }
+          &-3 {
+            background-image: linear-gradient(
+              $color-box-orange,
+              $color-box-orange-light
+            );
+          }
+          &-4 {
+            background-image: linear-gradient(
+              $color-box-red,
+              $color-box-red-light
+            );
+          }
+        }
+      }
+      &-text {
+        padding-top: 6.5rem;
+        width: 37%;
+        float: left;
+
+        span {
+          color: $color-white;
+        }
+      }
+    }
+  }
+}
+// !-- #section-etc --
+
+#banner-area {
+  background-color: $color-blue-1;
+
+  &-img {
+    background-image: url(../images/banner.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100px;
+  }
+}
+
+// !-- #banner--img --

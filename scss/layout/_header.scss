@@ -1,0 +1,131 @@
+header {
+  width: 100%;
+  height: 110vh;
+  background: linear-gradient(
+      to right,
+      $color-gray-dark 0%,
+      $color-gray-light 100%
+    ),
+    url(../images/header-image.jpg);
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  #logo-img {
+    width: 9%;
+    height: 5vh;
+    position: absolute;
+    left: 7rem;
+    top: 4rem;
+    background-image: url(../images/img_logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-name: moveInLeft;
+    animation-duration: 1.5s;
+    animation-iteration-count: 3;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+  }
+  #header-area {
+    width: 175rem;
+    margin: 0 auto;
+    height: inherit;
+  }
+  #header-img {
+    position: relative;
+    bottom: 15rem;
+    &-top {
+      width: 900px;
+      height: 270px;
+      position: absolute;
+      top: 23rem;
+      left: 62rem;
+      z-index: 99;
+      animation: fadein 3s ease alternate both;
+      animation-delay: 1.5s;
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      &:hover {
+        transition: all 0.7s ease-in-out;
+        transform: scale(1.05);
+        cursor: pointer;
+      }
+    }
+    &-main {
+      position: relative;
+      height: 1030px;
+      top: 23rem;
+      left: 23rem;
+      animation: sliding 2s cubic-bezier(0.175, 0.285, 0.43, 0.9) normal;
+    }
+    @keyframes sliding {
+      from {
+        left: 100rem;
+      }
+      to {
+        left: 23rem;
+      }
+    }
+    &-sub {
+      position: relative;
+      width: 180px;
+      height: 150px;
+      display: block;
+      left: 25rem;
+      bottom: 45rem;
+      transform-origin: bottom right;
+      animation: wobble ease-in alternate both infinite;
+      animation-duration: 3500ms;
+      animation-delay: 1.5s;
+
+      @keyframes wobble {
+        0% {
+          transform: rotate(0deg);
+        }
+        28% {
+          transform: rotate(0deg);
+        }
+        30% {
+          transform: rotate(15deg);
+        }
+        32% {
+          transform: rotate(0deg);
+        }
+        35% {
+          transform: rotate(15deg);
+        }
+        37% {
+          transform: rotate(-5deg);
+        }
+        41% {
+          transform: rotate(8deg);
+        }
+        44% {
+          transform: rotate(0deg);
+        }
+        47% {
+          transform: rotate(18deg);
+        }
+        49% {
+          transform: rotate(0deg);
+        }
+        52% {
+          transform: rotate(15deg);
+        }
+        55% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+    }
+  }
+}

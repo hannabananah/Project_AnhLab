@@ -1,0 +1,16 @@
+footer {
+  color: $color-gray;
+  background-color: $color-black;
+
+  @include clearfix();
+  #copyright {
+    font-size: 1.2rem;
+    padding: 50px 0;
+
+    p {
+		width: 40%;
+		margin: 0 auto;
+		text-align: center;
+    }
+  }
+}

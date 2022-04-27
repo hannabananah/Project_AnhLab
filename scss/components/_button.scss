@@ -1,0 +1,22 @@
+.btn-text {
+	position: relative;
+    bottom: 3.7rem;
+    left: 45rem;
+	font-size: 2.1rem;
+	font-weight: 700;
+	text-decoration: none;
+	color: $color-secondary;
+	display: inline-block;
+	width: 370px;
+	padding: 5px 2.5rem;
+	border: 1px solid $color-black;
+	border-radius: 25px;
+    transition: all .5s;
+	background-color: $color-black;
+	font-family: '맑은고딕',sans-serif;
+    &:hover{
+        color:$color-white;
+        background-color:$color-primary;
+        border:1px solid transparent;
+    }
+}

@@ -1,0 +1,24 @@
+//구글폰트 -나눔고딕
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Nanum+Gothic:wght@400;700;800&display=swap');
+//font-family: 'Nanum Gothic', sans-serif;
+//구글폰트 -아이콘
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+} //10px
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
