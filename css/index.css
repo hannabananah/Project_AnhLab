@@ -684,6 +684,7 @@ header #header-img-sub {
   max-width: 1903px;
   -webkit-transition: all 2s;
   transition: all 2s;
+  padding-bottom: 15rem;
   -webkit-animation: moveInLeft 1s linear normal;
           animation: moveInLeft 1s linear normal;
 }
@@ -771,6 +772,7 @@ header #header-img-sub {
   max-width: 1903px;
   -webkit-transition: all 2s;
   transition: all 2s;
+  padding-bottom: 15rem;
   -webkit-animation: moveInLeft 1s linear normal;
           animation: moveInLeft 1s linear normal;
 }
