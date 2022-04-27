@@ -26,12 +26,8 @@ li {
 @-webkit-keyframes moveInLeft {
   0% {
     opacity: .1;
-    -webkit-transform: translateX(-8rem);
-            transform: translateX(-8rem);
-  }
-  80% {
-    -webkit-transform: translateX(1rem);
-            transform: translateX(1rem);
+    -webkit-transform: translateX(-20rem);
+            transform: translateX(-20rem);
   }
   100% {
     opacity: 1;
@@ -43,12 +39,8 @@ li {
 @keyframes moveInLeft {
   0% {
     opacity: .1;
-    -webkit-transform: translateX(-8rem);
-            transform: translateX(-8rem);
-  }
-  80% {
-    -webkit-transform: translateX(1rem);
-            transform: translateX(1rem);
+    -webkit-transform: translateX(-20rem);
+            transform: translateX(-20rem);
   }
   100% {
     opacity: 1;
@@ -637,23 +629,24 @@ header #header-img-sub {
 
 @media screen and (min-width: 900px) and (max-width: 1200px) {
   #main #section-about {
-    width: 100%;
+    width: 109rem;
   }
 }
 
 @media screen and (min-width: 701px) and (max-width: 899px) {
   #main #section-about {
-    width: 100%;
-    height: 54rem;
-    padding: 7rem 6rem 6.5rem 6rem;
+    width: 75rem;
+    height: 79rem;
+    padding: 7rem 1rem 6.5rem;
   }
 }
 
 @media screen and (max-width: 700px) {
   #main #section-about {
-    width: 100%;
-    height: 60rem;
-    padding: 7rem 6rem 6.5rem 6rem;
+    width: 57rem;
+    height: 50rem;
+    min-height: 56rem;
+    padding: 7rem 0rem;
   }
 }
 
@@ -670,7 +663,11 @@ header #header-img-sub {
 
 @media screen and (max-width: 700px) {
   #main #section-about-words {
-    width: 100%;
+    width: 65rem;
+    margin-left: -5rem;
+  }
+  #main #section-about-words img {
+    width: 85%;
   }
 }
 
@@ -681,31 +678,24 @@ header #header-img-sub {
   text-align: center;
 }
 
-#main #section-about-photo {
+#main #section-about-photo-1 {
   width: 60%;
   margin: 0 auto;
+  max-width: 1903px;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  -webkit-animation: moveInLeft 1s linear normal;
+          animation: moveInLeft 1s linear normal;
 }
 
-@media screen and (min-width: 701px) and (max-width: 899px) {
-  #main #section-about-photo {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  #main #section-about-photo {
-    width: 100%;
-  }
-}
-
-#main #section-about-photo .photo {
+#main #section-about-photo-1 .photo {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   float: left;
-  padding: 0 2rem;
+  padding: 2rem;
 }
 
-#main #section-about-photo .photo:hover {
+#main #section-about-photo-1 .photo:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   padding: 1rem;
@@ -714,9 +704,75 @@ header #header-img-sub {
   z-index: 10;
 }
 
-#main #section-about-photo .photo img {
+#main #section-about-photo-1 .photo img {
   width: 100%;
   height: 100%;
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  #main #section-about-photo-1 {
+    width: 57rem;
+  }
+  #main #section-about-photo-1 .photo {
+    width: 19rem;
+    padding: 1rem;
+  }
+  #main #section-about-photo-1 .section1-photo1,
+  #main #section-about-photo-1 .section1-photo2,
+  #main #section-about-photo-1 .section1-photo4,
+  #main #section-about-photo-1 .section1-photo5 {
+    float: left;
+  }
+  #main #section-about-photo-1 .section1-photo3 {
+    clear: both;
+    float: left;
+  }
+  #main #section-about-photo-1 .section1-photo1 {
+    margin-left: 9rem;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 899px) {
+  #main #section-about-photo-1 {
+    width: 48rem;
+  }
+  #main #section-about-photo-1 .photo {
+    width: 16rem;
+    padding: 1rem;
+  }
+  #main #section-about-photo-1 .section1-photo1,
+  #main #section-about-photo-1 .section1-photo2,
+  #main #section-about-photo-1 .section1-photo4,
+  #main #section-about-photo-1 .section1-photo5 {
+    float: left;
+  }
+  #main #section-about-photo-1 .section1-photo3 {
+    clear: both;
+    float: left;
+  }
+  #main #section-about-photo-1 .section1-photo1 {
+    margin-left: 9rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #main #section-about-photo-1 {
+    width: 56rem;
+  }
+  #main #section-about-photo-1 .photo {
+    width: 11.2rem;
+    padding: 1rem;
+  }
+}
+
+#main #section-about-photo-2 {
+  width: 60%;
+  margin: 0 auto;
+  max-width: 1903px;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  -webkit-animation: moveInLeft 1s linear normal;
+          animation: moveInLeft 1s linear normal;
 }
 
 #main #section-about .section2 {
@@ -726,8 +782,16 @@ header #header-img-sub {
 }
 
 #main #section-about .section2-photo {
-  padding: 0 1rem;
+  padding: 2rem 1rem;
   width: 250px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  float: left;
+}
+
+#main #section-about .section2-photo img {
+  width: 100%;
+  height: 100%;
 }
 
 #main #section-about .section2-photo1 {
@@ -1002,16 +1066,61 @@ header #header-img-sub {
   border: none;
 }
 
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  #main #section-about .section2 {
+    width: 100%;
+  }
+  #main #section-about .section2 .photo {
+    width: 27rem;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 899px) {
+  #main #section-about .section2 {
+    width: 39rem;
+  }
+  #main #section-about .section2 .photo {
+    width: 18rem;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #main #section-about .section2 {
+    width: 55rem;
+    min-height: 32rem;
+  }
+  #main #section-about .section2 .photo {
+    width: 12rem;
+    padding: 0.5rem;
+  }
+}
+
 #main #section-about .section3 {
   padding-top: 5rem;
+  width: 60%;
+  max-width: 1903px;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  -webkit-animation: moveInLeft 1s linear normal;
+          animation: moveInLeft 1s linear normal;
+  margin: 0 auto;
 }
 
 #main #section-about .section3-photo {
-  padding: 0 1rem;
+  padding: 2rem 1rem;
   width: 350px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  float: left;
 }
 
-#main #section-about .section3 .photo:hover {
+#main #section-about .section3-photo img {
+  width: 100%;
+  height: 100%;
+}
+
+#main #section-about .section3-photo:hover {
   -webkit-animation: flip 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
           animation: flip 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
   border: none;
@@ -1050,33 +1159,67 @@ header #header-img-sub {
   }
 }
 
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  #main #section-about .section3 .photo {
+    width: 27rem;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 899px) {
+  #main #section-about .section3 {
+    width: 69rem;
+  }
+  #main #section-about .section3 .photo {
+    width: 23rem;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #main #section-about .section3 {
+    width: 26rem;
+  }
+  #main #section-about .section3 .photo {
+    width: 24rem;
+    padding: 2rem;
+  }
+}
+
 #section-e {
   padding: 100px 0 80px;
   background: #fff;
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  #section-e {
+    width: 118rem;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 899px) {
+  #section-e {
+    width: 100%;
+  }
+  #section-e #section-etc img {
+    position: relative;
+    left: -200px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #section-e {
+    width: 100%;
+  }
+  #section-e #section-etc img {
+    position: relative;
+    left: -250px;
+  }
 }
 
 #section-etc {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-}
-
-@media screen and (min-width: 900px) and (max-width: 1200px) {
-  #section-etc {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 701px) and (max-width: 899px) {
-  #section-etc {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  #section-etc {
-    width: 100%;
-  }
 }
 
 #section-etc [id^="etc-"] {
@@ -1089,17 +1232,55 @@ header #header-img-sub {
 
 @media screen and (min-width: 900px) and (max-width: 1200px) {
   #section-etc .etc {
-    width: 33.33333%;
-    float: left;
+    width: 100%;
+  }
+  #section-etc .etc .etc-text {
+    width: 44%;
+    float: none;
+  }
+  #section-etc .etc .btn-text {
+    bottom: 6.6rem;
+    left: 46rem;
   }
 }
 
 @media screen and (min-width: 701px) and (max-width: 899px) {
   #section-etc .etc {
-    width: 33.33333%;
-    float: left;
-    height: 22rem;
-    overflow: hidden;
+    width: 260rem;
+  }
+  #section-etc .etc .etc-icon {
+    width: 15%;
+  }
+  #section-etc .etc .etc-text {
+    width: 0;
+  }
+  #section-etc .etc .etc-text h2 {
+    display: none;
+  }
+  #section-etc .etc .btn-text {
+    position: relative;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #section-etc .etc {
+    width: 260rem;
+  }
+  #section-etc .etc .etc-icon {
+    width: 9%;
+  }
+  #section-etc .etc .etc-text {
+    width: 0;
+  }
+  #section-etc .etc .etc-text h2 {
+    display: none;
+  }
+  #section-etc .etc .btn-text {
+    position: relative;
+    bottom: 0;
+    left: 0;
   }
 }
 

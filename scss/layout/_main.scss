@@ -28,19 +28,20 @@
       @include clearfix();
 
       @include mq("small-screen-1") {
-        width: 100%;
+        width: 109rem;
       } //900px~1200px
 
       @include mq("small-screen-2") {
-        width: 100%;
-        height: 54rem;
-        padding: 7rem 6rem 6.5rem 6rem;
+        width: 75rem;
+        height: 79rem;
+        padding: 7rem 1rem 6.5rem;
       } //701px~899px
 
       @include mq("small-screen-3") {
-        width: 100%;
-        height: 60rem;
-        padding: 7rem 6rem 6.5rem 6rem;
+        width: 57rem;
+        height: 50rem;
+        min-height: 56rem;
+        padding: 7rem 0rem;
       } //~700px
 
       &-words {
@@ -51,7 +52,11 @@
           width: 100%;
         }
         @include mq("small-screen-3") {
-          width: 100%;
+          width: 65rem;
+          margin-left: -5rem;
+          img {
+            width: 85%;
+          }
         }
         p {
           padding: 1.5rem 0;
@@ -60,21 +65,17 @@
           text-align: center;
         }
       }
-      &-photo {
+      &-photo-1 {
         width: 60%;
         margin: 0 auto;
-
-        @include mq("small-screen-2") {
-          width: 100%;
-        }
-        @include mq("small-screen-3") {
-          width: 100%;
-        }
+        max-width: 1903px;
+        transition: all 2s;
+        animation: moveInLeft 1s linear normal;
 
         .photo {
           transition: all 0.5s;
           float: left;
-          padding: 0 2rem;
+          padding: 2rem;
 
           &:hover {
             transform: scale(1.1);
@@ -88,6 +89,60 @@
             height: 100%;
           }
         }
+        @include mq("small-screen-1") {
+          width: 57rem;
+          .photo {
+            width: 19rem;
+            padding: 1rem;
+          }
+          .section1-photo1,
+          .section1-photo2,
+          .section1-photo4,
+          .section1-photo5 {
+            float: left;
+          }
+          .section1-photo3 {
+            clear: both;
+            float: left;
+          }
+          .section1-photo1 {
+            margin-left: 9rem;
+          }
+        }
+        @include mq("small-screen-2") {
+          width: 48rem;
+          .photo {
+            width: 16rem;
+            padding: 1rem;
+          }
+          .section1-photo1,
+          .section1-photo2,
+          .section1-photo4,
+          .section1-photo5 {
+            float: left;
+          }
+          .section1-photo3 {
+            clear: both;
+            float: left;
+          }
+          .section1-photo1 {
+            margin-left: 9rem;
+          }
+        }
+        @include mq("small-screen-3") {
+          width: 56rem;
+          .photo {
+            width: 11.2rem;
+            padding: 1rem;
+          }
+        }
+      }
+      &-photo-2 {
+        width: 60%;
+        margin: 0 auto;
+        max-width: 1903px;
+        transition: all 2s;
+        animation: moveInLeft 1s linear normal;
       }
       .section2 {
         padding-top: 11rem;
@@ -95,8 +150,15 @@
         min-height: 44rem;
 
         &-photo {
-          padding: 0 1rem;
+          padding: 2rem 1rem;
           width: 250px;
+          transition: all 0.5s;
+          float: left;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
 
           &1 {
             animation-name: pop1;
@@ -222,19 +284,53 @@
             border: none;
           }
         }
+        @include mq("small-screen-1") {
+          width: 100%;
+          .photo {
+            width: 27rem;
+          }
+        }
+        @include mq("small-screen-2") {
+          width: 39rem;
+          .photo {
+            width: 18rem;
+            padding: 1rem;
+          }
+        }
+        @include mq("small-screen-3") {
+          width: 55rem;
+          min-height: 32rem;
+          .photo {
+            width: 12rem;
+            padding: 0.5rem;
+          }
+        }
       }
       .section3 {
         padding-top: 5rem;
+        width: 60%;
+        max-width: 1903px;
+        transition: all 2s;
+        animation: moveInLeft 1s linear normal;
+        margin: 0 auto;
 
         &-photo {
-          padding: 0 1rem;
+          padding: 2rem 1rem;
           width: 350px;
-        }
-        .photo:hover {
-          animation: flip 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
-          border: none;
-          padding: 0 1rem;
-          transform: none;
+          transition: all 0.5s;
+          float: left;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+
+          &:hover {
+            animation: flip 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+            border: none;
+            padding: 0 1rem;
+            transform: none;
+          }
         }
 
         @keyframes flip {
@@ -247,6 +343,25 @@
             transform-origin: 100% 0;
           }
         }
+        @include mq("small-screen-1") {
+          .photo {
+            width: 27rem;
+          }
+        }
+        @include mq("small-screen-2") {
+          width: 69rem;
+          .photo {
+            width: 23rem;
+            padding: 1rem;
+          }
+        }
+        @include mq("small-screen-3") {
+          width: 26rem;
+          .photo {
+            width: 24rem;
+            padding: 2rem;
+          }
+        }
       }
     }
   }
@@ -256,20 +371,28 @@
   padding: 100px 0 80px;
   background: #fff;
 
+  @include mq("small-screen-1") {
+    width: 118rem;
+  }
+  @include mq("small-screen-2") {
+    width: 100%;
+    #section-etc img{
+      position: relative;
+      left: -200px;
+    }
+  }
+  @include mq("small-screen-3") {
+    width: 100%;
+    #section-etc img{
+      position: relative;
+      left: -250px;
+    }
+  }
   &tc {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
 
-    @include mq("small-screen-1") {
-      width: 100%;
-    }
-    @include mq("small-screen-2") {
-      width: 100%;
-    }
-    @include mq("small-screen-3") {
-      width: 100%;
-    }
     [id^="etc-"] {
       height: 20rem;
     }
@@ -279,14 +402,52 @@
 
     .etc {
       @include mq("small-screen-1") {
-        width: 33.33333%;
-        float: left;
+        width: 100%;
+
+        .etc-text{
+          width: 44%;
+          float: none;
+        }
+        .btn-text{
+          bottom: 6.6rem;
+          left: 46rem;
+        }
       }
       @include mq("small-screen-2") {
-        width: 33.33333%;
-        float: left;
-        height: 22rem;
-        overflow: hidden;
+        width: 260rem;
+
+        .etc-icon{
+          width: 15%;
+        }
+        .etc-text{
+          width: 0;
+        }
+        .etc-text h2{
+          display: none;
+        }
+        .btn-text{
+          position: relative;
+          bottom: 0;
+          left: 0;
+        }
+      }
+      @include mq("small-screen-3") {
+        width: 260rem;
+
+        .etc-icon{
+          width: 9%;
+        }
+        .etc-text{
+          width: 0;
+        }
+        .etc-text h2{
+          display: none;
+        }
+        .btn-text{
+          position: relative;
+          bottom: 0;
+          left: 0;
+        }
       }
 
       &-icon {
