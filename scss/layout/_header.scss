@@ -51,7 +51,7 @@ header {
       height: 270px;
       position: absolute;
       top: 23rem;
-      left: 62rem;
+      left: 58rem;
       z-index: 99;
       animation: fadein 3s ease alternate both;
       animation-delay: 1.5s;
@@ -91,7 +91,7 @@ header {
       position: relative;
       height: 1030px;
       top: 23rem;
-      left: 23rem;
+      left: 19rem;
       animation: sliding 2s cubic-bezier(0.175, 0.285, 0.43, 0.9) normal;
       transition: all 2s;
 
@@ -129,7 +129,7 @@ header {
       width: 180px;
       height: 150px;
       display: block;
-      left: 25rem;
+      left: 21rem;
       bottom: 45rem;
       transform-origin: bottom right;
       animation: wobble ease-in alternate both infinite;
