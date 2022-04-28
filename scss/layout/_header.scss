@@ -12,6 +12,17 @@ header {
   background-size: cover;
   background-position: center;
   position: relative;
+  @include mq("small-screen-1") {
+    height: 80vh;
+  } //900px~1200px
+
+  @include mq("small-screen-2") {
+    height: 75vh;
+  } //701px~899px
+
+  @include mq("small-screen-3") {
+    height: 60vh;
+  } //~700px
   #logo-img {
     width: 9%;
     height: 5vh;
@@ -44,6 +55,7 @@ header {
       z-index: 99;
       animation: fadein 3s ease alternate both;
       animation-delay: 1.5s;
+      transition: all 2s;
       @keyframes fadein {
         from {
           opacity: 0;
@@ -57,6 +69,23 @@ header {
         transform: scale(1.05);
         cursor: pointer;
       }
+      @include mq("small-screen-1") {
+        left: 35rem;
+        img {
+          width: 60%;
+        }
+      } //900px~1200px
+
+      @include mq("small-screen-2") {
+        left: 24rem;
+        img {
+          width: 45%;
+        }
+      } //701px~899px
+
+      @include mq("small-screen-3") {
+       display: none;
+      } //~700px
     }
     &-main {
       position: relative;
@@ -64,6 +93,28 @@ header {
       top: 23rem;
       left: 23rem;
       animation: sliding 2s cubic-bezier(0.175, 0.285, 0.43, 0.9) normal;
+      transition: all 2s;
+
+      @include mq("small-screen-1") {
+        left: 10rem;
+        img {
+          width: 60%;
+        }
+      } //900px~1200px
+
+      @include mq("small-screen-2") {
+        left: 3rem;
+        img {
+          width: 45%;
+        }
+      } //701px~899px
+
+      @include mq("small-screen-3") {
+        left: -2rem;
+        img {
+          width: 38%;
+        }
+      } //~700px
     }
     @keyframes sliding {
       from {
@@ -84,6 +135,22 @@ header {
       animation: wobble ease-in alternate both infinite;
       animation-duration: 3500ms;
       animation-delay: 1.5s;
+      transition: all 2s;
+
+      @include mq("small-screen-1") {
+        left: 10rem;
+        img {
+          width: 60%;
+        }
+      } //900px~1200px
+
+      @include mq("small-screen-2") {
+        display: none;
+      } //701px~899px
+
+      @include mq("small-screen-3") {
+        display: none;
+      } //~700px
 
       @keyframes wobble {
         0% {

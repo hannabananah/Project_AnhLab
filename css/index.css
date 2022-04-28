@@ -362,6 +362,24 @@ header {
   position: relative;
 }
 
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  header {
+    height: 80vh;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 899px) {
+  header {
+    height: 75vh;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    height: 60vh;
+  }
+}
+
 header #logo-img {
   width: 9%;
   height: 5vh;
@@ -405,6 +423,8 @@ header #header-img-top {
           animation: fadein 3s ease alternate both;
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
+  -webkit-transition: all 2s;
+  transition: all 2s;
 }
 
 @-webkit-keyframes fadein {
@@ -433,6 +453,30 @@ header #header-img-top:hover {
   cursor: pointer;
 }
 
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  header #header-img-top {
+    left: 35rem;
+  }
+  header #header-img-top img {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 899px) {
+  header #header-img-top {
+    left: 24rem;
+  }
+  header #header-img-top img {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header #header-img-top {
+    display: none;
+  }
+}
+
 header #header-img-main {
   position: relative;
   height: 1030px;
@@ -440,6 +484,35 @@ header #header-img-main {
   left: 23rem;
   -webkit-animation: sliding 2s cubic-bezier(0.175, 0.285, 0.43, 0.9) normal;
           animation: sliding 2s cubic-bezier(0.175, 0.285, 0.43, 0.9) normal;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  header #header-img-main {
+    left: 10rem;
+  }
+  header #header-img-main img {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 899px) {
+  header #header-img-main {
+    left: 3rem;
+  }
+  header #header-img-main img {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header #header-img-main {
+    left: -2rem;
+  }
+  header #header-img-main img {
+    width: 38%;
+  }
 }
 
 @-webkit-keyframes sliding {
@@ -475,6 +548,29 @@ header #header-img-sub {
           animation-duration: 3500ms;
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  header #header-img-sub {
+    left: 10rem;
+  }
+  header #header-img-sub img {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 899px) {
+  header #header-img-sub {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header #header-img-sub {
+    display: none;
+  }
 }
 
 @-webkit-keyframes wobble {
