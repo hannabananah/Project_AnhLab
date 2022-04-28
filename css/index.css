@@ -697,6 +697,24 @@ header #header-img-sub {
   text-align: center;
 }
 
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  #main {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 899px) {
+  #main {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #main {
+    width: 100%;
+  }
+}
+
 #main #section {
   width: 100%;
   margin: 155px auto 35px;
@@ -1169,7 +1187,7 @@ header #header-img-sub {
     width: 100%;
   }
   #main #section-about .section2 .photo {
-    width: 27rem;
+    width: 24rem;
   }
 }
 
@@ -1259,7 +1277,7 @@ header #header-img-sub {
 
 @media screen and (min-width: 900px) and (max-width: 1200px) {
   #main #section-about .section3 .photo {
-    width: 27rem;
+    width: 20rem;
   }
 }
 
@@ -1338,7 +1356,7 @@ header #header-img-sub {
   }
   #section-etc .etc .btn-text {
     bottom: 6.6rem;
-    left: 46rem;
+    left: 58rem;
   }
 }
 
@@ -1433,6 +1451,24 @@ header #header-img-sub {
 
 #banner-area {
   background-color: #272869;
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  #banner-area {
+    width: 96%;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 899px) {
+  #banner-area {
+    width: 74%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #banner-area {
+    width: 54%;
+  }
 }
 
 #banner-area-img {

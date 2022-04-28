@@ -7,6 +7,19 @@
   background: #eff3f6;
   text-align: center;
 
+  @include mq("small-screen-1") {
+    width: 100%;
+  } //900px~1200px
+
+  @include mq("small-screen-2") {
+    width: 100%;
+  } //701px~899px
+
+  @include mq("small-screen-3") {
+    width: 100%;
+  } //~700px
+
+
   #section {
     width: 100%;
     margin: 155px auto 35px;
@@ -289,7 +302,7 @@
         @include mq("small-screen-1") {
           width: 100%;
           .photo {
-            width: 27rem;
+            width: 24rem;
           }
         }
         @include mq("small-screen-2") {
@@ -347,7 +360,7 @@
         }
         @include mq("small-screen-1") {
           .photo {
-            width: 27rem;
+            width: 20rem;
           }
         }
         @include mq("small-screen-2") {
@@ -412,7 +425,7 @@
         }
         .btn-text{
           bottom: 6.6rem;
-          left: 46rem;
+          left: 58rem;
         }
       }
       @include mq("small-screen-2") {
@@ -505,6 +518,18 @@
 
 #banner-area {
   background-color: $color-blue-1;
+
+  @include mq("small-screen-1") {
+    width: 96%;
+  } //900px~1200px
+
+  @include mq("small-screen-2") {
+    width: 74%;
+  } //701px~899px
+
+  @include mq("small-screen-3") {
+    width: 54%;
+  } //~700px
 
   &-img {
     background-image: url(../images/banner.jpg);
