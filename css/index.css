@@ -399,6 +399,7 @@ header #logo-img {
           animation-delay: 1s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
+  text-indent: -999999999999px;
 }
 
 header #header-area {
@@ -417,7 +418,7 @@ header #header-img-top {
   height: 270px;
   position: absolute;
   top: 23rem;
-  left: 62rem;
+  left: 58rem;
   z-index: 99;
   -webkit-animation: fadein 3s ease alternate both;
           animation: fadein 3s ease alternate both;
@@ -481,7 +482,7 @@ header #header-img-main {
   position: relative;
   height: 1030px;
   top: 23rem;
-  left: 23rem;
+  left: 19rem;
   -webkit-animation: sliding 2s cubic-bezier(0.175, 0.285, 0.43, 0.9) normal;
           animation: sliding 2s cubic-bezier(0.175, 0.285, 0.43, 0.9) normal;
   -webkit-transition: all 2s;
@@ -538,7 +539,7 @@ header #header-img-sub {
   width: 180px;
   height: 150px;
   display: block;
-  left: 25rem;
+  left: 21rem;
   bottom: 45rem;
   -webkit-transform-origin: bottom right;
           transform-origin: bottom right;
@@ -1485,6 +1486,27 @@ footer {
   background-color: #3d3d3d;
 }
 
+footer address {
+  padding-top: 20px;
+  font-size: 13px;
+  line-height: 21px;
+  font-style: normal;
+  text-align: center;
+}
+
+footer address a {
+  padding-top: 15px;
+  font-size: 13px;
+  line-height: 21px;
+  font-style: normal;
+  color: #c0c0c0;
+  text-decoration: none;
+}
+
+footer address a.emphasize {
+  color: #fff;
+}
+
 footer::after {
   content: '';
   display: block;
@@ -1493,7 +1515,7 @@ footer::after {
 
 footer #copyright {
   font-size: 1.2rem;
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 footer #copyright p {
