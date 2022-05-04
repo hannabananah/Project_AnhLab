@@ -1,6 +1,7 @@
 footer {
   color: $color-gray;
   background-color: $color-black;
+  height: 50vh;
 
   & address {
     padding-top: 20px;
@@ -32,5 +33,18 @@ footer {
       margin: 0 auto;
       text-align: center;
     }
+  }
+  .footer-nav {
+    position: fixed;
+    z-index: 99999;
+    bottom: 0;
+    display: none;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+  }
+  .show,
+  .footer-nav:hover {
+    display: block;
   }
 }

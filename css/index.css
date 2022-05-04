@@ -1484,6 +1484,7 @@ header #header-img-sub {
 footer {
   color: #909191;
   background-color: #3d3d3d;
+  height: 50vh;
 }
 
 footer address {
@@ -1522,5 +1523,20 @@ footer #copyright p {
   width: 40%;
   margin: 0 auto;
   text-align: center;
+}
+
+footer .footer-nav {
+  position: fixed;
+  z-index: 99999;
+  bottom: 0;
+  display: none;
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+}
+
+footer .show,
+footer .footer-nav:hover {
+  display: block;
 }
 /*# sourceMappingURL=index.css.map */
